@@ -11,14 +11,14 @@ Installation and Project Running Rubric
 - IDE is setup
 - [Node.js](https://nodejs.org/en/download/package-manager) is installed
 - Git username and password is configured
-- SSH Keys have been configured, if not use this [guidline](https://www.notion.so/How-to-set-up-SSH-Keys-a91e2c2602d64742b8b1570ce234aaff)
+- SSH Keys have been configured, if not use this [guideline](https://www.notion.so/How-to-set-up-SSH-Keys-a91e2c2602d64742b8b1570ce234aaff)
 
 ### Clone Repository
 
 ----
 - [ ] Create a directory to clone the script with `mkdir <name of your desired folder>`
 - [ ] Navigate into the folder with `cd <name of the folder that you just created>`
-- [ ] Copy and Paste this `git clone git@gitlab.com:podia1/debut.git`
+- [ ] Copy and Paste this `git clone git@github.com:snakpodia/deel-exercise-3.git`
 - [ ] Navigate in to the repository
 - [ ] Open the repository and run `npm ci` to run a clean install
 ----
