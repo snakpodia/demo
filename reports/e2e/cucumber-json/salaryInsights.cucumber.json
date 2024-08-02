@@ -1,0 +1,153 @@
+[
+  {
+    "description": "  Salary Insights Data based on Country and Roles selected will be tested",
+    "keyword": "Feature",
+    "name": "Salary Insights: Salary based on Roles and Country",
+    "line": 3,
+    "id": "salary-insights:-salary-based-on-roles-and-country",
+    "tags": [],
+    "uri": "salaryInsights.feature",
+    "elements": [
+      {
+        "id": "salary-insights:-salary-based-on-roles-and-country;verify-that-selecting-a-role-and-country-for-accountant-in-brazil-shows-an-accurate-salary-graph",
+        "keyword": "Scenario",
+        "line": 6,
+        "name": "Verify that selecting a Role and Country for Accountant in Brazil shows an accurate salary graph",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 7,
+            "name": "I select the \"Accountant Role\"",
+            "result": {
+              "status": "passed",
+              "duration": 14319000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 8,
+            "name": "I select the \"Country - Brazil\"",
+            "result": {
+              "status": "passed",
+              "duration": 868000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 9,
+            "name": "I click the \"Salary Insights Search Button\"",
+            "result": {
+              "status": "passed",
+              "duration": 813000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 10,
+            "name": "I should see the \"Median Salary\" for an Accountant in Brazil",
+            "result": {
+              "status": "passed",
+              "duration": 26000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "salary-insights:-salary-based-on-roles-and-country;verify-that-selecting-a-role-and-country-for-qa-engineer-in-canada-an-accurate-salary-graph",
+        "keyword": "Scenario",
+        "line": 12,
+        "name": "Verify that selecting a Role and Country for QA Engineer in Canada an accurate salary graph",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 13,
+            "name": "I select the \"QA Engineer Role\"",
+            "result": {
+              "status": "passed",
+              "duration": 5093000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 14,
+            "name": "I select the \"Country - Canada\"",
+            "result": {
+              "status": "passed",
+              "duration": 955000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 15,
+            "name": "I click the \"Salary Insights Search Button\"",
+            "result": {
+              "status": "passed",
+              "duration": 812000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 16,
+            "name": "I should see the \"Median Salary\" for a QA Engineer in Canada",
+            "result": {
+              "status": "passed",
+              "duration": 17000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "salary-insights:-salary-based-on-roles-and-country;verify-that-selecting-a-role-and-country-for-software-engineer-in-japan-an-accurate-salary-graph",
+        "keyword": "Scenario",
+        "line": 18,
+        "name": "Verify that selecting a Role and Country for Software Engineer in Japan an accurate salary graph",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 19,
+            "name": "I select the \"Software Engineer Role\"",
+            "result": {
+              "status": "passed",
+              "duration": 4288000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 20,
+            "name": "I select the \"Country - Japan\"",
+            "result": {
+              "status": "passed",
+              "duration": 711000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 21,
+            "name": "I click the \"Salary Insights Search Button\"",
+            "result": {
+              "status": "passed",
+              "duration": 771000000
+            }
+          }
+        ]
+      }
+    ]
+  }
+]

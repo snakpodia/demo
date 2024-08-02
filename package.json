@@ -1,0 +1,36 @@
+{
+  "name": "web-automated-test",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "chrome": "npx cypress run --browser chrome --env split=true",
+    "electron": "npx cypress run",
+    "reports": "node reporter.js"
+  },
+  "author": "Stephanie Nakpodia",
+  "license": "ISC",
+  "devDependencies": {
+    "@cucumber/cucumber": "^10.8.0",
+    "cypress": "^13.13.2",
+    "cypress-fill-command": "^1.0.2",
+    "multiple-cucumber-html-reporter": "^1.19.0"
+  },
+  "cypress-cucumber-preprocessor": {
+    "integrationFolder": "cypress/e2e",
+    "nonGlobalStepDefinitions": false,
+    "stepDefinitions": "cypress/e2e",
+    "cucumberJson": {
+      "generate": true,
+      "outputFolder": "./reports/e2e/cucumber-json/",
+      "filePrefix": "",
+      "fileSuffix": ".cucumber"
+    }
+  },
+  "dependencies": {
+    "cypress-cucumber-preprocessor": "^4.3.1",
+    "cypress-real-events": "^1.13.0",
+    "cypress-wait-until": "^3.0.2"
+  }
+}

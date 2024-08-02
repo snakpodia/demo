@@ -1,0 +1,1 @@
+docker build . -t runner; docker run runner
