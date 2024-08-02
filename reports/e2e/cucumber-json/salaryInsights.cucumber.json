@@ -9,10 +9,10 @@
     "uri": "salaryInsights.feature",
     "elements": [
       {
-        "id": "salary-insights:-salary-based-on-roles-and-country;verify-that-selecting-a-role-and-country-for-accountant-in-brazil-shows-an-accurate-salary-graph",
+        "id": "salary-insights:-salary-based-on-roles-and-country;verify-that-selecting-a-role-and-country-for-accountant-in-brazil-shows-an-accurate-salary-data",
         "keyword": "Scenario",
         "line": 6,
-        "name": "Verify that selecting a Role and Country for Accountant in Brazil shows an accurate salary graph",
+        "name": "Verify that selecting a Role and Country for Accountant in Brazil shows an accurate Salary Data",
         "tags": [],
         "type": "scenario",
         "steps": [
@@ -23,7 +23,7 @@
             "name": "I select the \"Accountant Role\"",
             "result": {
               "status": "passed",
-              "duration": 14319000000
+              "duration": 3805000000
             }
           },
           {
@@ -33,7 +33,7 @@
             "name": "I select the \"Country - Brazil\"",
             "result": {
               "status": "passed",
-              "duration": 868000000
+              "duration": 1561000000
             }
           },
           {
@@ -43,26 +43,26 @@
             "name": "I click the \"Salary Insights Search Button\"",
             "result": {
               "status": "passed",
-              "duration": 813000000
+              "duration": 654000000
             }
           },
           {
             "arguments": [],
             "keyword": "Then ",
             "line": 10,
-            "name": "I should see the \"Median Salary\" for an Accountant in Brazil",
+            "name": "I should see the \"Salary Data\" for an Accountant in Brazil",
             "result": {
               "status": "passed",
-              "duration": 26000000
+              "duration": 72000000
             }
           }
         ]
       },
       {
-        "id": "salary-insights:-salary-based-on-roles-and-country;verify-that-selecting-a-role-and-country-for-qa-engineer-in-canada-an-accurate-salary-graph",
+        "id": "salary-insights:-salary-based-on-roles-and-country;verify-that-selecting-a-role-and-country-for-qa-engineer-in-canada-an-accurate-salary-data",
         "keyword": "Scenario",
         "line": 12,
-        "name": "Verify that selecting a Role and Country for QA Engineer in Canada an accurate salary graph",
+        "name": "Verify that selecting a Role and Country for QA Engineer in Canada an accurate Salary Data",
         "tags": [],
         "type": "scenario",
         "steps": [
@@ -73,7 +73,7 @@
             "name": "I select the \"QA Engineer Role\"",
             "result": {
               "status": "passed",
-              "duration": 5093000000
+              "duration": 2849000000
             }
           },
           {
@@ -83,7 +83,7 @@
             "name": "I select the \"Country - Canada\"",
             "result": {
               "status": "passed",
-              "duration": 955000000
+              "duration": 1594000000
             }
           },
           {
@@ -93,26 +93,26 @@
             "name": "I click the \"Salary Insights Search Button\"",
             "result": {
               "status": "passed",
-              "duration": 812000000
+              "duration": 772000000
             }
           },
           {
             "arguments": [],
             "keyword": "Then ",
             "line": 16,
-            "name": "I should see the \"Median Salary\" for a QA Engineer in Canada",
+            "name": "I should see the \"Salary Data\" for a QA Engineer in Canada",
             "result": {
               "status": "passed",
-              "duration": 17000000
+              "duration": 70000000
             }
           }
         ]
       },
       {
-        "id": "salary-insights:-salary-based-on-roles-and-country;verify-that-selecting-a-role-and-country-for-software-engineer-in-japan-an-accurate-salary-graph",
+        "id": "salary-insights:-salary-based-on-roles-and-country;verify-that-selecting-a-role-and-country-for-software-engineer-in-japan-an-accurate-salary-data",
         "keyword": "Scenario",
         "line": 18,
-        "name": "Verify that selecting a Role and Country for Software Engineer in Japan an accurate salary graph",
+        "name": "Verify that selecting a Role and Country for Software Engineer in Japan an accurate Salary Data",
         "tags": [],
         "type": "scenario",
         "steps": [
@@ -123,7 +123,7 @@
             "name": "I select the \"Software Engineer Role\"",
             "result": {
               "status": "passed",
-              "duration": 4288000000
+              "duration": 3653000000
             }
           },
           {
@@ -133,7 +133,7 @@
             "name": "I select the \"Country - Japan\"",
             "result": {
               "status": "passed",
-              "duration": 711000000
+              "duration": 924000000
             }
           },
           {
@@ -143,7 +143,17 @@
             "name": "I click the \"Salary Insights Search Button\"",
             "result": {
               "status": "passed",
-              "duration": 771000000
+              "duration": 697000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 22,
+            "name": "I should see the \"Salary Data\" for a Software Engineer in Japan",
+            "result": {
+              "status": "failed",
+              "error_message": "CypressError: Timed out retrying after 5000ms: `cy.wait()` timed out waiting `5000ms` for the 1st request to the route: `datacall`. No request ever occurred.\n\nBecause this error occurred during a `before each` hook we are skipping all of the remaining tests.\n    at cypressErr (https://growth.deel.training/__cypress/runner/cypress_runner.js:76024:18)\n    at Object.errByPath (https://growth.deel.training/__cypress/runner/cypress_runner.js:76078:10)\n    at checkForXhr (https://growth.deel.training/__cypress/runner/cypress_runner.js:135653:84)\n    at <unknown> (https://growth.deel.training/__cypress/runner/cypress_runner.js:135679:28)\n    at tryCatcher (https://growth.deel.training/__cypress/runner/cypress_runner.js:1807:23)\n    at Promise.attempt.Promise.try (https://growth.deel.training/__cypress/runner/cypress_runner.js:4315:29)\nFrom previous event:\n    at Promise.longStackTracesCaptureStackTrace [as _captureStackTrace] (https://growth.deel.training/__cypress/runner/cypress_runner.js:3486:19)\n    at Promise._then (https://growth.deel.training/__cypress/runner/cypress_runner.js:1239:17)\n    at Promise._passThrough (https://growth.deel.training/__cypress/runner/cypress_runner.js:4110:17)\n    at Promise.lastly.Promise.finally (https://growth.deel.training/__cypress/runner/cypress_runner.js:4119:17)\n    at Object.onRunnableRun (https://growth.deel.training/__cypress/runner/cypress_runner.js:163180:53)\n    at $Cypress.action (https://growth.deel.training/__cypress/runner/cypress_runner.js:41458:28)\n    at Runnable.run (https://growth.deel.training/__cypress/runner/cypress_runner.js:145768:13)\n    at next (https://growth.deel.training/__cypress/runner/cypress_runner.js:155553:10)\n    at <unknown> (https://growth.deel.training/__cypress/runner/cypress_runner.js:155597:5)\n    at timeslice (https://growth.deel.training/__cypress/runner/cypress_runner.js:146108:27)\nFrom Your Spec Code:\n    at Context.eval (cypress/support/e2e.js:35:5)"
             }
           }
         ]

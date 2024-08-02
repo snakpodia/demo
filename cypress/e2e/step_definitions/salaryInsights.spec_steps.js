@@ -2,6 +2,7 @@ import { SalaryInsightsPage } from '../../Pages';
 
 const salaryInsightsPage = new SalaryInsightsPage();
 
+// Step Definitions
 When('I select the "Accountant Role"', () => {
   salaryInsightsPage.selectAccountantRole();
 });
@@ -31,17 +32,24 @@ And('I click the "Salary Insights Search Button"', () => {
   salaryInsightsPage.clickSalaryInsightsSearchButton();
 });
 
-Then('I should see the "Median Salary" for an Accountant in Brazil', () => {
+Then('I should see the "Salary Data" for an Accountant in Brazil', () => {
 
-  salaryInsightsPage.verifyTableDataHeading("Accountant", "Brazil");
+  salaryInsightsPage.verifyTableDataHeading('Accountant', 'Brazi')
+  salaryInsightsPage.verifySalaryData('R$', 'Accountant');
+
 });
 
-Then('I should see the "Median Salary" for a QA Engineer in Canada', () => {
+Then('I should see the "Salary Data" for a QA Engineer in Canada', () => {
 
   salaryInsightsPage.verifyTableDataHeading("QA Engineer", "Canada");
+  salaryInsightsPage.verifySalaryData('C$', 'QA Engineer');
+
 });
 
-Then('I should see the "Median Salary" for a Software Engineer in Japan', () => {
+Then('I should see the "Salary Data" for a Software Engineer in Japan', () => {
 
-  salaryInsightsPage.verifyTableDataHeading();
+  salaryInsightsPage.verifyTableDataHeading("Software Engineer", "Japan");
+  salaryInsightsPage.verifySalaryData('¥', "Software Engineer");
+
+
 });

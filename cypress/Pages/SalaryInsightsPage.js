@@ -11,6 +11,7 @@ class SalaryInsightsPage {
         japan_country_option: "p:contains('Japan')",
         salary_insights_tool_search_button: "button:contains('Search')",
         salary_table_text: "[data-qa=\"salary-table\"] h2",
+        salary_table_currency: "p:contains('median salary')"
         // Add more selectors but dont forget your commas
       };
     }
@@ -54,6 +55,12 @@ class SalaryInsightsPage {
     get salaryTableHeading() {
       return cy.get(this.selectors.salary_table_text); // Likely a typo, fix the selector name
     }
+
+    get salaryTableMedianData() {
+        return cy.get(this.selectors.salary_table_currency); // Likely a typo, fix the selector name
+      }
+
+    
   
     // Methods for Salary Insight Page   
     selectAccountantRole() {
@@ -91,7 +98,7 @@ class SalaryInsightsPage {
     this.insightsToolSearchButton.click();
 
     // Wait for the Selector to be visible on the page before click.
-    cy.waitUntil(() => cy.get("[data-qa=\"salary-table\"] > .MuiTypography-h2").should('be.visible'), {
+    cy.waitUntil(() => this.salaryTableHeading, {
       timeout: 5000,
       interval: 200,
     });
@@ -99,13 +106,12 @@ class SalaryInsightsPage {
 
   // Verifies the salary table text
   verifyTableDataHeading(role, country) {
-    this.salaryTableHeading.should('contain', role).and('contain', country)
+    this.salaryTableHeading.invoke('prop', 'innerText').should('contain', role).and('contain', country)
   }
 
-  // Method to verify the graph
-  verifyGraphData(expectedBars) {
-    this.salaryGraph.should('have.length', expectedBars.length)
-      .and('contain', ""); // check that 3 bars are highlighted dark and have low, median and high figures
+  // Method to verify the Data for Role and Country is present
+  verifySalaryData(currency, role) {
+    this.salaryTableMedianData.invoke('prop', 'innerText').should('contain', currency).and('contain', "The median salary is").and('contain', role)
   }
 }
 
