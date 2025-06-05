@@ -1,4 +1,4 @@
-# Stephanie Nakpodia Deel Exercise
+
 
 ----
 Installation and Project Running Rubric
