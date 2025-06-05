@@ -18,7 +18,7 @@ Installation and Project Running Rubric
 ----
 - [ ] Create a directory to clone the script with `mkdir <name of your desired folder>`
 - [ ] Navigate into the folder with `cd <name of the folder that you just created>`
-- [ ] Copy and Paste this `git clone git@github.com:snakpodia/deel-exercise-3.git`
+- [ ] Copy and Paste this `git clone git@github.com:snakpodia/demo.git`
 - [ ] Navigate in to the repository
 - [ ] Open the repository and run `npm ci` to run a clean install
 ----
